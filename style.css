@@ -1,0 +1,53 @@
+header, main ,footer ,nav, article, section{
+    padding: 10px;
+    border: 1px gray solid;
+}
+header{
+    text-align: center;
+}
+nav{
+    display:grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+.kiskep img,.nagykep img{
+    width: 100%;
+}
+.kiskep {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+.jobb ul{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+       
+    
+}
+
+/*reszponzitivas*/
+@media screen and (max-width: 800px){
+    .kiskep {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .jobb ul{ 
+        display: grid;
+        grid-template-columns:  1fr ;
+           
+        
+    }
+}
+@media screen and (max-width: 400px){
+    
+    .kiskep {
+       
+        grid-template-columns: 1fr;
+        
+    }
+    nav{
+        
+        grid-template-columns:  1fr;
+    }
+}
